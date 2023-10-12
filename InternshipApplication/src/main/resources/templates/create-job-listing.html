@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en"
+xmlns:th="http:///www.thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Job Listing</title>
+</head>
+<body>
+<form th:action="@{/employer/createJobListing(employerId=${employerId})}" th:object="${jobListingDTO}" th:method="POST">
+    <input type="number" th:field="${jobListingDTO.openPositions}" placeholder="Open Positions">
+    <input type="text" th:field="*{title}" placeholder="JOB TITLE">
+    <input type="text" th:field="*{description}" placeholder="JOB DESCRIPTION">
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>

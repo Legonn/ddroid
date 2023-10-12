@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en"
+xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Available Jobs</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Open Positions</th>
+        <th>Action</th>
+    </tr>
+    <tr th:each="jobListing : ${jobListingList}">
+        <td th:text="${jobListing.title}"></td>
+        <td th:text="${jobListing.jobDescription}"></td>
+        <td th:text="${jobListing.openPositions}"></td>
+        <td>
+            <div th:if="${principal == null}"><a  th:href="@{/displayApplyForm(jobListingId=${jobListing.id})}">Apply</a></div>
+            <div th:unless=="${#authentication.principal !=null}"> <form th:if="${user.role=='ROLE_EMPLOYER'}" th:action="@{/employer/removeJobListing(jobListingId=${jobListing.id}, employerId=${employerId})}" th:method="delete">
+                <input type="hidden" name="_method" value="delete">
+                <button type="Submit">Delete</button>
+            </form>
+            </div>
+        </td>
+    </tr>
+
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"
+xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Applicants</title>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Phone Number</th>
+    <th>Email</th>
+    <th>Country</th>
+    <th>City</th>
+  </tr>
+  <tr th:each="applicant : ${applicants}">
+    <td th:text="${applicant.lastName}"></td>
+    <td th:text="${applicant.phoneNumber}"></td>
+    <td th:text="${applicant.email}"></td>
+    <td th:text="${applicant.country}"></td>
+    <td th:text="${applicant.city}"></td>
+  </tr>
+</table>
+
+</body>
+</html>

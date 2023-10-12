@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en"
+xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Apply</title>
+
+    <style>
+        span{
+        color:red;
+        }
+    </style>
+</head>
+<body>
+<h1>Application Form</h1>
+<form th:action="@{/processApplyForm(jobListingId=${jobListingId})}" th:object="${applicantDTO}" th:method="POST">
+    <div>
+        <h2>Contact Information:</h2>
+        <div>
+            <label type="text">First Name<span>*</span> </label>
+            <input type="text" th:field="*{firstName}">
+            <label type="text">Last Name<span>*</span> </label>
+            <input type="text" th:field="*{lastName}">
+            <label type="text">Phone Number<span>*</span>  </label>
+            <input type="text" th:field="*{phoneNumber}">
+            <label type="text">Email Address<span>*</span> </label>
+            <input type="text" th:field="*{email}">
+        </div>
+        <h2>Address</h2>
+        <div>
+            <label type="text">Address Line 1<span>*</span> </label>
+            <input type="text" th:field="*{address1}">
+            <label type="text">Address Line 2</label>
+            <input type="text" th:field="*{address2}">
+        </div>
+        <div>
+            <label type="text">Country<span>*</span></label>
+            <select th:field="*{country}">
+                <option th:value="Romania" th:text="Romania"></option>
+                <option th:value="Bulgaria" th:text="Bulgaria"></option>
+                <option th:value="Greece" th:text="Greece"></option>
+            </select>
+            <label type="text">State</label>
+            <select th:field="*{country}"></select>
+            <label type="text">City<span>*</span></label>
+            <select th:field="*{city}">
+                <option th:value="Iasi" th:text="Iasi"></option>
+                <option th:value="Bucharest" th:text="Bucharest"></option>
+                <option th:value="Cluj" th:text="Cluj"></option>
+            </select>
+        </div>
+    </div>
+    <button type="submit">Join Us</button>
+
+</form>
+
+</body>
+</html>

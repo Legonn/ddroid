@@ -1,0 +1,29 @@
+"id","address1","address2","city","country","email","first_name","last_name","phone_number","state"
+1,"address1","address2","Timisoara","Romania","George@Traian.com","George","Traian","133647569",NULL
+2,"address1","address2","Bucuresti","Romania","Traian@George.com","Traian","George","133647570",NULL
+3,"address1","address2","Cluj","Romania","Traian@Alex.com","Traian","Alex","133647571",NULL
+4,"address1","address2","Cluj","Romania","Alex@George.com","Alex","George","133647572",NULL
+5,"address1","address2","Cluj","Romania","Alex@Traian.com","Alex","Traian","133647573",NULL
+6,"address1","address2","Cluj","Romania","George@Marian.com","George","Marian","133647574",NULL
+7,"address1","address2","Timisoara","Romania","George@Traian.com","George","Traian","133647575",NULL
+8,"address1","address2","Timisoara","Romania","George@Traian.com","George","Traian","133647576",NULL
+9,"address1","address2","Timisoara","Romania","Traian@Traian.com","Traian","Traian","133647577",NULL
+10,"address1","address2","Cluj","Romania","Traian@Traian.com","Traian","Traian","133647578",NULL
+11,"address1","address2","Cluj","Romania","Traian@George.com","Traian","George","133647569",NULL
+12,"address1","address2","Timisoara","Romania","Marian@Traian.com","Marian","Traian","133647570",NULL
+13,"address1","address2","Cluj","Romania","Alex@Alex.com","Alex","Alex","133647571",NULL
+14,"address1","address2","Cluj","Romania","Traian@George.com","Traian","George","133647572",NULL
+15,"address1","address2","Bucuresti","Romania","Marian@Alex.com","Marian","Alex","133647573",NULL
+16,"address1","address2","Cluj","Romania","Traian@Alex.com","Traian","Alex","133647574",NULL
+17,"address1","address2","Bucuresti","Romania","Traian@Traian.com","Traian","Traian","133647575",NULL
+18,"address1","address2","Bucuresti","Romania","Traian@Marian.com","Traian","Marian","133647576",NULL
+19,"address1","address2","Bucuresti","Romania","George@Marian.com","George","Marian","133647577",NULL
+20,"address1","address2","Timisoara","Romania","Traian@Alex.com","Traian","Alex","133647578",NULL
+21,"Teodor Mihaili 37-39","","Cluj","Romania","andreea@marin.com","Andreea","Marin","0752523996",NULL
+22,"Teodor Mihaili 37-39","","Cluj","Romania","teodor@maihali.com","Teodor","Mihali","0752523993",NULL
+23,"Strada Traian 1","ap 5","Iasi","Romania","proiectus@gmail.com","Proiectus","Manageriatus","0755233921",NULL
+24,"Strada Traian 22","","Bucharest","Romania","marcus@zaharus.com","Marcus","Zaharus","0755233223",NULL
+25,"Strada Unirii 2","","Bucharest","Romania","maria@teozun.com","Maria","Toezun","0723425311",NULL
+26,"Strada Pajistei 56","ap 23","Cluj","Romania","ada@gmail.com","Ada","Adaliela","0712308533",NULL
+27,"Stradfa Gheorge 15","","Iasi","Romania","Ghe@ghe.com","Gheorge","Tatar","0712345897",NULL
+28,"Strada Maincolo 5","","Bucharest","Romania","marinela@gmail.com","Marinela","Paslaru","0777567662",NULL
